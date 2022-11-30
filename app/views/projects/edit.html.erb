@@ -1,10 +1,62 @@
+<style>
+a, input {
+  background: #575757;
+  background-image: -webkit-linear-gradient(top, #575757, #c4c4c4);
+  background-image: -moz-linear-gradient(top, #575757, #c4c4c4);
+  background-image: -ms-linear-gradient(top, #575757, #c4c4c4);
+  background-image: -o-linear-gradient(top, #575757, #c4c4c4);
+  background-image: linear-gradient(to bottom, #575757, #c4c4c4);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 18px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  
+}
+
+textarea {
+  width:500px;
+  height:400px;
+}
+
+label {
+  font-size:32px;
+}
+
+a:hover, input {
+  background: #474347;
+  background-image: -webkit-linear-gradient(top, #474347, #000000);
+  background-image: -moz-linear-gradient(top, #474347, #000000);
+  background-image: -ms-linear-gradient(top, #474347, #000000);
+  background-image: -o-linear-gradient(top, #474347, #000000);
+  background-image: linear-gradient(to bottom, #474347, #000000);
+  text-decoration: none;
+}
+
+#editWindow {
+  background-color:rgb(150,150,150);
+  padding-bottom:50px;
+
+}
+
+</style>
+
+<div id="editWindow">
+
 <h1>Editing project</h1>
+
 
 <%= render "form", project: @project %>
 
 <br>
 
 <div>
-  <%= link_to "Show this project", @project %> |
+  <%= link_to "Show this project", @project %> 
   <%= link_to "Back to projects", projects_path %>
+</div>
+
+
 </div>
